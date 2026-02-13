@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HockeyQuizApp.Pages.QuizPage"
+             BackgroundColor="#0D47A1"
+             Title="Quiz Hockey">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label x:Name="QuestionNumberLabel"
+               FontAttributes="Bold"
+               FontSize="20"
+               HorizontalOptions="Center"
+               TextColor="#E3F2FD"/>
+
+            <Image x:Name="QuestionImage"
+               HeightRequest="200"
+               Aspect="AspectFit"
+               HorizontalOptions="Center"/>
+
+            <Label x:Name="QuestionLabel"
+               FontSize="18"
+               TextColor="#E3F2FD"
+               LineBreakMode="WordWrap"
+               HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="15">
+                <Button x:Name="Option1Button" Clicked="Answer_Clicked"
+                        BackgroundColor="#03A9F4"
+                        TextColor="White"
+                        CornerRadius="25"
+                        Padding="15"/>
+                <Button x:Name="Option2Button" Clicked="Answer_Clicked"
+                        BackgroundColor="#03A9F4"
+                        TextColor="White"
+                        CornerRadius="25"
+                        Padding="15"/>
+                <Button x:Name="Option3Button" Clicked="Answer_Clicked"
+                        BackgroundColor="#03A9F4"
+                        TextColor="White"
+                        CornerRadius="25"
+                        Padding="15"/>
+            </VerticalStackLayout>
+
+            <Label x:Name="FeedbackLabel"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Center"/>
+
+            <Button x:Name="NextButton"
+                Text="Suivant"
+                IsVisible="False"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                CornerRadius="25"
+                Padding="15"
+                Clicked="Next_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

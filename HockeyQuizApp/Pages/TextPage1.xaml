@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HockeyQuizApp.Pages.TextPage1"
+             BackgroundColor="#0D47A1"
+             Title="Chapitre 1">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Image 
+                Source="ice_hockey.jpg" 
+                HeightRequest="180" 
+                Aspect="AspectFit"
+                HorizontalOptions="Center"/>
+
+            <Label 
+                Text="Histoire du Hockey"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="#E3F2FD"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Label 
+                Text="Le hockey sur glace est né au Canada au 19e siècle. Il est devenu rapidement un sport très populaire en Amérique du Nord. La première ligue professionnelle a été créée au début du 20e siècle. Aujourd’hui, la Ligue Nationale de Hockey (LNH) est la ligue la plus connue au monde."
+                FontSize="16"
+                TextColor="#E3F2FD"
+                LineBreakMode="WordWrap"/>
+
+            <Button 
+                Text="Suivant"
+                Clicked="Next_Clicked"
+                BackgroundColor="#FFC107"
+                TextColor="Black"
+                CornerRadius="25"
+                Padding="15"
+                HorizontalOptions="Center"
+                WidthRequest="150"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

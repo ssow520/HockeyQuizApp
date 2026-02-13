@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HockeyQuizApp.MainPage"
+             BackgroundColor="#0D47A1"
+             Title="Hockey Quiz">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="20"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+           
+            <Image 
+                Source="hockey_logo.png" 
+                WidthRequest="200" 
+                HeightRequest="200"
+                Aspect="AspectFit"
+                HorizontalOptions="Center"/>
+
+           
+            <Label
+                Text="Hockey Quiz"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"/>
+
+       
+            <Label
+                Text="Testez vos connaissances sur le hockey !"
+                FontSize="18"
+                TextColor="White"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Button 
+                Text="Commencer"
+                Clicked="StartReading_Clicked"
+                BackgroundColor="#FFC107"
+                TextColor="Black"
+                CornerRadius="25"
+                Padding="15"
+                WidthRequest="150"
+                HorizontalOptions="Center"/>
+
+           
+                <Image
+                Source="ice_hockey.png"
+                WidthRequest="120"
+                HeightRequest="80"
+                HorizontalOptions="Center"
+                Opacity="0.5"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

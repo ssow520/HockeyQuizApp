@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HockeyQuizApp.Pages.TextPage3"
+             BackgroundColor="#0D47A1"
+             Title="Chapitre 3">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Image 
+                Source="equipment_hockey.png" 
+                HeightRequest="180" 
+                Aspect="AspectFit"
+                HorizontalOptions="Center"/>
+
+            <Label 
+                Text="L'Équipement"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="#E3F2FD"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Label 
+                Text="Les joueurs portent un casque, des gants, des protège-tibias et des épaulières. Ils utilisent un bâton pour frapper la rondelle. Le gardien porte un équipement spécial pour arrêter les tirs."
+                FontSize="16"
+                TextColor="#E3F2FD"
+                LineBreakMode="WordWrap"/>
+
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                <Button 
+                    Text="Précédent"
+                    Clicked="Back_Clicked"
+                    BackgroundColor="#03A9F4"
+                    TextColor="White"
+                    CornerRadius="25"
+                    Padding="15"
+                    WidthRequest="120"/>
+
+                <Button 
+                    Text="Suivant"
+                    Clicked="Next_Clicked"
+                    BackgroundColor="#FFC107"
+                    TextColor="Black"
+                    CornerRadius="25"
+                    Padding="15"
+                    WidthRequest="120"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
