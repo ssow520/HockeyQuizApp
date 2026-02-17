@@ -248,10 +248,5 @@ public partial class QuizPage : ContentPage
         currentQuestion++;
             DisplayQuestion();
         }
-        else
-        {
-            await Navigation.PushAsync(new ResultPage(score, questions.Count));
-        }
-    }
 
 }
