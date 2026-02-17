@@ -246,9 +246,6 @@ public partial class QuizPage : ContentPage
     private async void Next_Clicked(object sender, EventArgs e)
     {
         currentQuestion++;
-
-        if (currentQuestion < questions.Count)
-        {
             DisplayQuestion();
         }
         else
