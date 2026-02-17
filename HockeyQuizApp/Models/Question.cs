@@ -10,9 +10,14 @@ namespace HockeyQuizApp.Models
     {
         public string Text { get; set; } = "";
         public string Image { get; set; } = "";
-        public string Option1 { get; set; } = "";
-        public string Option2 { get; set; } = "";
-        public string Option3 { get; set; } = "";
-        public int CorrectAnswer { get; set; }
+
+        public List<string> Options { get; set; } = new List<string>();
+
+        public string CorrectAnswer { get; set; } = "";
+
+        public string Explanation { get; set; } = "";
+
+        public string Category { get; set; } = "";
+
     }
 }

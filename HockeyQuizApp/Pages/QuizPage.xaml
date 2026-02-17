@@ -8,54 +8,56 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
+            <Label x:Name="CategoryLabel"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   TextColor="Yellow"
+                   HorizontalOptions="Center"/>
+
             <Label x:Name="QuestionNumberLabel"
-               FontAttributes="Bold"
-               FontSize="20"
-               HorizontalOptions="Center"
-               TextColor="#E3F2FD"/>
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   TextColor="#E3F2FD"/>
+
+            <Label x:Name="ScoreLabel"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <ProgressBar x:Name="QuizProgressBar"
+                         Progress="0"
+                         HeightRequest="10"
+                         BackgroundColor="White"/>
+
+            <Label x:Name="TimerLabel"
+                   FontSize="16"
+                   TextColor="Orange"
+                   HorizontalOptions="Center"/>
 
             <Image x:Name="QuestionImage"
-               HeightRequest="200"
-               Aspect="AspectFit"
-               HorizontalOptions="Center"/>
+                   HeightRequest="200"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"/>
 
             <Label x:Name="QuestionLabel"
-               FontSize="18"
-               TextColor="#E3F2FD"
-               LineBreakMode="WordWrap"
-               HorizontalOptions="Center"/>
+                   FontSize="18"
+                   TextColor="#E3F2FD"
+                   LineBreakMode="WordWrap"
+                   HorizontalOptions="Center"/>
 
             <VerticalStackLayout Spacing="15">
-                <Button x:Name="Option1Button" Clicked="Answer_Clicked"
-                        BackgroundColor="#03A9F4"
-                        TextColor="White"
-                        CornerRadius="25"
-                        Padding="15"/>
-                <Button x:Name="Option2Button" Clicked="Answer_Clicked"
-                        BackgroundColor="#03A9F4"
-                        TextColor="White"
-                        CornerRadius="25"
-                        Padding="15"/>
-                <Button x:Name="Option3Button" Clicked="Answer_Clicked"
-                        BackgroundColor="#03A9F4"
-                        TextColor="White"
-                        CornerRadius="25"
-                        Padding="15"/>
+                <Button x:Name="Option1Button" Clicked="Answer_Clicked"/>
+                <Button x:Name="Option2Button" Clicked="Answer_Clicked"/>
+                <Button x:Name="Option3Button" Clicked="Answer_Clicked"/>
+                <Button x:Name="Option4Button" Clicked="Answer_Clicked"/>
             </VerticalStackLayout>
 
             <Label x:Name="FeedbackLabel"
-               FontAttributes="Bold"
-               FontSize="18"
-               HorizontalOptions="Center"/>
-
-            <Button x:Name="NextButton"
-                Text="Suivant"
-                IsVisible="False"
-                BackgroundColor="#4CAF50"
-                TextColor="White"
-                CornerRadius="25"
-                Padding="15"
-                Clicked="Next_Clicked"/>
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
 
         </VerticalStackLayout>
     </ScrollView>

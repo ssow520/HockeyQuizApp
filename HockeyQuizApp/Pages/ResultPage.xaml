@@ -36,7 +36,7 @@
 
         <Button 
             Text="🔄 Recommencer"
-            BackgroundColor="White"
+            BackgroundColor="Green"
             TextColor="Black"
             FontAttributes="Bold"
             CornerRadius="25"

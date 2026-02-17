@@ -7,7 +7,7 @@
 
     <ScrollView>
 
-        <VerticalStackLayout Padding="20" Spacing="20">
+        <VerticalStackLayout Padding="20" Spacing="15">
 
             <Image 
                 Source="ice_hockey.jpg" 
